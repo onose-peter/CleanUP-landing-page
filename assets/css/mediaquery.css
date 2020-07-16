@@ -1,0 +1,131 @@
+
+
+@media (max-width: 991px){
+    section{
+        overflow-x: hidden;
+    }
+    section{
+        flex-direction: column;
+        padding-top: 150px;
+        height: auto;
+    }
+    section .contentBx{
+        max-width: 100%;
+    }
+    section .imgBx img{
+        position: relative;
+        max-width: 500px;
+        width: 90%;
+        margin-top: 60px;
+        left: 8rem;
+        z-index: 4;
+        animation: ease-in;
+    }
+    .copyright{
+        position: relative;
+        top: -1.5rem;
+    }
+    .followus{
+       text-align: left !important;
+    }
+    .heroimg{
+        margin-left: -3rem;
+    }
+    
+.hero-content h1{
+    font-weight: 400;
+    font-size: 2rem;
+    color:  #159263;
+    margin-top: -3rem;
+}
+
+.hero-content h3{
+    font-weight: 400;
+    color:  #F7991C;
+}
+.hero-content p{
+    width: 150%;
+}
+
+
+    
+}
+
+@media (max-width: 764px){
+    section{
+        flex-direction: column;
+        padding: 150px 20px 100px;
+        height: auto;
+    }
+    section .contentBx h2{
+        font-size: 40px;
+    }
+    section .contentBx p{
+        font-size: 16px;
+    }
+    section .contentBx .countdown .time{
+        font-size: 30px;
+        min-width: 70px;
+        margin-right: 5px;
+    }
+    section .contentBx .countdown .time span{
+        font-size: 14px;   
+    }
+    section .contentBx a {
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px 25px;
+    }
+    .newsletter{
+        width: 90%;
+        padding: 30px;
+    }
+    .newsletter .inputBox input{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .newsletter h2{
+        font-size: 36px;
+        color: #312747;
+    }
+    .icons .rect {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .icons .rect {
+        display: none;
+    }
+
+    .icon2 .rect{
+        display: block;
+    }
+
+    .imageList ul{
+        left: -13rem;
+        top: 57rem;
+        position: absolute;
+        display: inline-flex;
+    }
+    .imageList ul li{
+        margin: 20px 0;
+        margin-right: 1rem;
+        font-size: 13px;
+    }
+    .btnBox{
+        z-index: 10000;
+        position: absolute;
+        right: 0%;
+        top: 70rem;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .features h2{
+        display: none;
+    }
+    .features{
+        height: 30rem;
+    }
+    
+
+}
