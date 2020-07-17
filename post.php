@@ -1,52 +1,26 @@
 <?php
 
-$email = filter_input(INPUT_POST, "email");
+$conn = mysqli_connect('localhost', 'root', '', 'peter');
 
-if (!empty($email)) {
+if(isset ($_POST['submit'])){
+$email = $_POST['email'];
+$email = mysqli_real_escape_string($conn, $email);
 
+$query = "INSERT INTO capture (email)
+VALUES ('$email')";
 
-    $host = "localhost";
-    $dbusername = "root";
-    $dbpassword = "";
-    $dbname = "my_database";
+$result = mysqli_query($conn,$query);
+if($result){
+echo "<script>
+alert ('successfully subscribed');
+window.location.pathname = 'phph/index.html';
+</script>";
+} else{
+echo "<script>
+alert ('unsuccessful');
+window.location.pathname = 'phph/index.html';
+</script>";
 }
-else {
-    echo "Email should not be empty";
-    die();
 }
-
-
-//creating connection
-
-$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
-
-if (mysqli_connect_error()){
-    die('Connect Error ('. mysqli_connect_errno .')'
-    .mysqli_connect_error());
-}
-else{
-    $sql = "INSERT INTO email_capture (email) 
-    value ('$email')";
-
-    if ($conn -> query($sql)){
-        echo "New record is inserted";
-    }
-    else{
-        echo "Error: ". $sql ."<br>". $conn->error;
-    }
-    $conn->close();
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>

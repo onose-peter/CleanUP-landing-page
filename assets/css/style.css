@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(/assets/img/Path\ 5044.png);
+    background-image: url(/assets/img/Path5044.png);
     background-repeat: no-repeat;
     background-size: 47% auto;
     background-position: top right;
@@ -102,7 +102,7 @@ a{
 
 .imageList ul{
     left: 30%;
-    top: 45rem;
+    top: 42rem;
     position: absolute;
 }
 

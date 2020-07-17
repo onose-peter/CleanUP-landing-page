@@ -42,16 +42,22 @@ let imgBox = document.getElementById("img-box")
 let menuIcon = document.getElementById("btnIcon")
 
 function screen1(){
-    smallimg.src = "./assets/img/Capture.PNG"
+    smallimg.src = "assets/img/img1.PNG"
 }
 function screen2(){
-    smallimg.src = "./assets/img/bmw_black.jpg"
+    smallimg.src = "assets/img/img2.PNG"
 }
 function screen3(){
-    smallimg.src = "./assets/img/banner-image.png"
+    smallimg.src = "assets/img/img3.PNG"
 }
 function screen4(){
-    smallimg.src = "./assets/img/20170909_092652.png"
+    smallimg.src = "assets/img/img4.PNG"
+}
+function screen5(){
+    smallimg.src = "assets/img/img5.PNG"
+}
+function screen6(){
+    smallimg.src = "assets/img/img6.PNG"
 }
 
 
